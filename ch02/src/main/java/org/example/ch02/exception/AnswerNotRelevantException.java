@@ -1,0 +1,11 @@
+package org.example.ch02.exception;
+
+/**
+ @author arpanduari
+ @since 26/09/26
+ */
+public class AnswerNotRelevantException extends RuntimeException {
+    public AnswerNotRelevantException(String question, String answer) {
+        super("The answer '" + answer + "' is not relevant to the question '" + question + "'.");
+    }
+}
